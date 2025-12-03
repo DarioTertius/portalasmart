@@ -150,3 +150,21 @@ footer {
   background: #ffe650;
   color: #141414ff;
 }
+
+.entrada {
+  color: #28a745 !important;
+  font-weight: bold;
+}
+.saida {
+  color: #dc3545 !important;
+  font-weight: bold;
+}
+#tabela-gastos th:last-child,
+#tabela-gastos td:last-child {
+  text-align: right;
+}
+#tabela-gastos td:last-child::before {
+  content: attr(data-simbolo);
+  margin-right: 4px;
+  font-weight: bold;
+}
